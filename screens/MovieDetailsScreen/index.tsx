@@ -52,7 +52,7 @@ const MovieDetailsScreen = () => {
                                 Download</Text>
                         </Pressable>
                         <Text style={{ marginVertical: 10 }}>{movie.plot}</Text>
-                        <Text style={styles.year}>Cast: {movie.cast}</Text>
+                        <Text style={styles.year}>Casts: {movie.cast}</Text>
                         <Text style={styles.year}>Creator: {movie.creator}</Text>
 
                         {/* Row with icon buttons */}
