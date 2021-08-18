@@ -6,6 +6,7 @@ import movie from '../../assets/data/movie';
 import { MaterialIcons, Entypo, AntDesign, Feather, Ionicons, FontAwesome } from '@expo/vector-icons';
 import EpisodeItem from '../../components/EpisodeItem';
 import { Picker } from '@react-native-picker/picker';
+import VideoPlayer from '../../components/VideoPlayer';
 
 const firstEp = movie.seasons.items[0].episodes.items[0];
 const firstSeason = movie.seasons.items[0];
@@ -13,16 +14,16 @@ const firstSeason = movie.seasons.items[0];
 const MovieDetailsScreen = () => {
 
     const [currentSeason, setCurrentSeason] = useState(firstSeason);
-
+    const [currentEpisode, setCurrentEpisode] = useState(firstSeason.episodes.items[0]);
     const seasonNames = movie.seasons.items.map(season => season.name);
     return (
         <View>
-            <Image style={styles.image} source={{ uri: firstEp.poster }} />
-
+            <VideoPlayer episode={currentEpisode} />
             <FlatList
                 data={currentSeason.episodes.items}
                 style={{ marginBottom: 250 }}
-                renderItem={({ item }) => <EpisodeItem episode={item} />}
+                renderItem={({ item }) => <EpisodeItem episode={item} onPress={setCurrentEpisode} />}
+
                 ListHeaderComponent={(
                     <View style={{ padding: 12 }}>
                         <Text style={styles.title}>{movie.title}</Text>
