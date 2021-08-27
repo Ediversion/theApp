@@ -1,0 +1,46 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn install
+
+PATH: 
+  /Users/edisonmuhwezi/.amplify/bin:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/Users/edisonmuhwezi/.pyenv/shims:/Users/edisonmuhwezi/.pyenv/plugins/pyenv-virtualenv/shims:/Users/edisonmuhwezi/.pyenv/shims:/Users/edisonmuhwezi/.pyenv/bin:/Users/edisonmuhwezi/opt/anaconda3/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Users/edisonmuhwezi/.amplify/bin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/Users/edisonmuhwezi/opt/anaconda3/bin:/Users/edisonmuhwezi/opt/anaconda3/condabin:/Users/edisonmuhwezi/.pyenv/shims:/Users/edisonmuhwezi/.pyenv/plugins/pyenv-virtualenv/shims:/Users/edisonmuhwezi/.pyenv/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/Users/edisonmuhwezi/GoDocs/golib/bin:/usr/local/bin/node:/usr/local/bin/npm:/bin:/Users/edisonmuhwezi/GoDocs/golib/bin:/usr/local/bin/node:/usr/local/bin/npm
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  14.17.5
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.npmjs.org/prepublishOnly: Not found
+      at Request.params.callback [as _callback] (/usr/local/lib/node_modules/yarn/lib/cli.js:66988:18)
+      at Request.self.callback (/usr/local/lib/node_modules/yarn/lib/cli.js:140662:22)
+      at Request.emit (events.js:400:28)
+      at Request.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141634:10)
+      at Request.emit (events.js:400:28)
+      at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141556:12)
+      at Object.onceWrapper (events.js:519:28)
+      at IncomingMessage.emit (events.js:412:35)
+      at endReadableNT (internal/streams/readable.js:1317:12)
+      at processTicksAndRejections (internal/process/task_queues.js:82:21)
+
+npm manifest: 
+  {
+    "dependencies": {
+      "expo-module-scripts": "^2.0.0",
+      "build": "expo-module build",
+      "clean": "expo-module clean",
+      "test": "expo-module test",
+      "prepare": "expo-module prepare",
+      "prepublishOnly": "expo-module prepublishOnly",
+      "expo-module": "expo-module"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

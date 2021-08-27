@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-flix-dev-222859-authRole",
+      "UnauthRoleArn": "arn:aws:iam::210610557327:role/amplify-flix-dev-222859-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::210610557327:role/amplify-flix-dev-222859-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-flix-dev-222859-deployment",
+      "UnauthRoleName": "amplify-flix-dev-222859-unauthRole",
+      "StackName": "amplify-flix-dev-222859",
+      "StackId": "arn:aws:cloudformation:us-east-2:210610557327:stack/amplify-flix-dev-222859/e1ebb6c0-06a3-11ec-bb29-0260c7ec755c",
+      "AmplifyAppId": "dtk45oziilia9"
+    },
+    "categories": {
+      "auth": {
+        "flixc8d1a3d3": {}
+      }
+    }
+  }
+}

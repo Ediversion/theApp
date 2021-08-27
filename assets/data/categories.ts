@@ -1,7 +1,7 @@
 export default {
     items: [{
         id: 'category1',
-        title: 'Popular on Netflix',
+        title: 'The Collective',
         movies: [{
             id: 'movie1',
             poster: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/netflix/movie1.jpg',
@@ -39,7 +39,7 @@ export default {
         }]
     }, {
         id: 'category3',
-        title: 'Latin American Movies & TV',
+        title: 'Documentaries',
         movies: [{
             id: 'movie1',
             poster: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/netflix/movie3.jpg',
@@ -58,7 +58,7 @@ export default {
         }]
     }, {
         id: 'category4',
-        title: 'Comedies',
+        title: 'Church Series',
         movies: [{
             id: 'movie1',
             poster: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/netflix/movie5.jpg',

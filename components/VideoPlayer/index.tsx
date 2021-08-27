@@ -41,7 +41,7 @@ const VideoPlayer = (props: VideoPlayerProps) => {
                 uri: episode.poster,
             }}
             posterStyle={{ resizeMode: 'cover' }}
-            usePoster={true}
+            usePoster={false}
             useNativeControls
             resizeMode="contain"
             onPlaybackStatusUpdate={status => setStatus(() => status)}
