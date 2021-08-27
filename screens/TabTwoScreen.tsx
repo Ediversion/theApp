@@ -16,7 +16,7 @@ export default function TabTwoScreen() {
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
       <EditScreenInfo path="/screens/TabTwoScreen.tsx" />
       <Pressable onPress={onLogout} style={{ padding: 10, backgroundColor: 'darkgrey' }}>
-        <Text>Logout</Text>
+        <Text>LogOut</Text>
       </Pressable>
     </View>
   );
