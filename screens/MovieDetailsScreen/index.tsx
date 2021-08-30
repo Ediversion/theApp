@@ -54,18 +54,18 @@ const MovieDetailsScreen = () => {
                         </Pressable>
                         <Text style={{ marginVertical: 10 }}>{movie.plot}</Text>
                         <Text style={styles.year}>Cast: {movie.cast}</Text>
-                        <Text style={styles.year}>Creator: {movie.creator}</Text>
+                        <Text style={styles.year}>Creators: {movie.creator}</Text>
 
                         {/* Row with icon buttons */}
                         <View style={{ flexDirection: 'row', marginTop: 20 }}>
                             <View style={{ alignItems: 'center', marginHorizontal: 20 }}>
                                 <AntDesign name='plus' size={24} />
-                                <Text style={{ color: 'darkgrey', marginTop: 5 }}>My List</Text>
+                                <Text style={{ marginTop: 5 }}>My List</Text>
                             </View>
 
                             <View style={{ alignItems: 'center', marginHorizontal: 20 }}>
                                 <Feather name='thumbs-up' size={24} />
-                                <Text style={{ color: 'darkgrey', marginTop: 5 }}>Rate</Text>
+                                <Text style={{ marginTop: 5 }}>Rate</Text>
                             </View>
 
                             <View style={{ alignItems: 'center', marginHorizontal: 20 }}>
