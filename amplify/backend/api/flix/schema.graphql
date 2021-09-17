@@ -38,3 +38,4 @@ type Episode @model @key(name: "bySeason", fields: ["seasonID"]) {
   seasonID: ID!
   season: Season @connection(fields: ["seasonID"])
 }
+ 

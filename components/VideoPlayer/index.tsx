@@ -4,17 +4,28 @@ import { Video } from "expo-av";
 import { Episode } from '../../types';
 import { Playback } from 'expo-av/build/AV';
 import styles from "./styles";
+import { Storage } from "aws-amplify"
 
 
 interface VideoPlayerProps {
-    episode: Episode
+    episode: Episode;
 }
 
 const VideoPlayer = (props: VideoPlayerProps) => {
     const { episode } = props;
+    const [videoUrl, setVideoUrl] = useState('');
+
+
     const video = useRef<Playback>(null);
     const [status, setStatus] = useState({});
 
+    useEffect(() => {
+        if (episode.video.startsWith('http')) {
+            setVideoUrl(episode.video)
+            return;
+        }
+        Storage.get(episode.video).then(setVideoUrl);
+    }, [episode])
 
     useEffect(() => {
         if (!video) {
@@ -23,19 +34,24 @@ const VideoPlayer = (props: VideoPlayerProps) => {
         (async () => {
             await video?.current?.unloadAsync();
             await video?.current?.loadAsync(
-                { uri: episode.video },
+                { uri: videoUrl },
                 {},
                 false
             );
         })();
-    }, [episode])
+    }, [videoUrl])
+
+
+    if (!videoUrl) {
+        return null;
+    }
 
     return (
         <Video
             ref={video}
             style={styles.video}
             source={{
-                uri: episode.video,
+                uri: videoUrl,
             }}
             posterSource={{
                 uri: episode.poster,
