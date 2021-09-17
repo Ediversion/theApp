@@ -75,7 +75,7 @@ const MovieDetailsScreen = () => {
                     <View style={{ padding: 12 }}>
                         <Text style={styles.title}>{movie.title}</Text>
                         <View style={{ flexDirection: 'row' }}>
-                            <Text style={styles.match}>98% Match</Text>
+                            <Text style={styles.match}>99% Match</Text>
                             <Text style={styles.year}>{movie.year}</Text>
                             <View style={styles.ageContainer}>
                                 <Text style={styles.age}>12+</Text>
